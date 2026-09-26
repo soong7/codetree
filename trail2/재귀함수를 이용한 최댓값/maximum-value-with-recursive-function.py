@@ -16,4 +16,9 @@ Lesson 2. 값을 반환하는 재귀함수
 그냥 max(arr)하면 되지ㅋㅋ 황당하다
 """
 
-print(max(arr))
+def fun(n):
+    if n == 0:
+        return arr[0]
+    return max(fun(n - 1), arr[n])
+
+print(fun(n - 1))
